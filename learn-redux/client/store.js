@@ -3,8 +3,7 @@ import { syncHistoryWithStore } from 'react-router-redux';
 import { browserHistory } from 'react-router';
 
 // Import the root reducer
-// TODO: Index needed?
-import rootReducer from './reducers/index';
+import { rootReducer } from './reducers';
 
 // Default data so we don't have to worry about interacting with an API for tutorial
 import comments from './data/comments';
