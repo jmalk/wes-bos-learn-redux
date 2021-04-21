@@ -34,3 +34,9 @@ You can only have one reducer, so you might typically make multiple small ones t
 ## Joining up Actions and Reducers
 
 Every time you fire an action, every reducer will run. Each reducer must check the action to see if it cares about it. The reducer should only update the state if it is its job to do so.
+
+## Redux and React
+
+Instead of prop drilling, redux provides you something called `connect`. It allows you to inject data from the store where you need it in your components.
+
+Action creators need to be triggered by events from your UI.
