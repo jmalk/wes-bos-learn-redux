@@ -30,3 +30,7 @@ function reducer(action, state): state
 ```
 
 You can only have one reducer, so you might typically make multiple small ones then have a root reducer that combines them into one snapshot of the state.
+
+## Joining up Actions and Reducers
+
+Every time you fire an action, every reducer will run. Each reducer must check the action to see if it cares about it. The reducer should only update the state if it is its job to do so.
