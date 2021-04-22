@@ -1,5 +1,8 @@
 export function posts(state = [], action) {
-  console.log('post will change');
-  console.log({state, action});
-  return state;
+  switch(action.type) {
+    case 'INCREMENT_LIKES':
+      return state.map((post, index) => index === action.index ? { ...post, likes: post.likes + 1 } : post);
+    default:
+      return state
+  }
 }
